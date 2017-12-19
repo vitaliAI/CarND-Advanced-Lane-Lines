@@ -189,7 +189,7 @@ In the pipeline described in the lectures, the perspective transform was applied
 
 The effect of reversing this order, by applying the perspective transform first and then applying the edge detection was also examined. It was found that with the current set of hyper-parameters used for edge detection, the reverse process was able to reject more "distractions" at the cost of a decrease in the number of lane pixels found. This was particularly of interest in some parts of the challenge video. Here is an example of an image where the order of thresholding and warping made a difference:
 
-![Effect of order of operations][image3]
+![Effect of order of operations][image7]
 
 However, the effect wasn't significant enough to merit its use in the final version. The reversed order of operations was also found to remove too many legitimate lane pixels. `challenge_video_out2.mp4` is an example of video output using the reverse order of operations. This option can be enabled by commenting the lines 392-393 and uncommenting lines 396-397. This hack is probably not needed with a better gradient enhancement process.
 
@@ -213,11 +213,11 @@ Euler spirals, also known as clothoids, are parametric curves whose curvature ch
 
 [image1]: ./images/4.png "Original and Undistorted images"
 [image2]: ./images/# 
-[image3]: ./images/#
+[image3]: ./images/6.png "Threshold"
 [image4]: ./images/3.png "Warp Example"
 [image5]: ./images/2.png "Histogram"
-[image6]: ./images/#
-[image7]: ./images/#
+[image6]: ./images/7.png
+[image7]: ./images/8.png
 [image8]: ./images/1.png "Project Output"
 [image9]: ./images/5.png "Advanced Output"
 [video1]: ./project_video_out.mp4 "Project video output"
